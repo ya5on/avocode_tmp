@@ -1,0 +1,397 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+
++reset()
+
+body
+  font-family: 'Open Sans', sans-serif
+  max-width: 1920px
+
+.container
+  +wrapper
+
+h1
+  font-size: 38px
+  line-height: 48px
+  font-weight: 600
+  color: #2e2e2e
+
+h2
+  font-size: 28px
+  color: #2e2e2e
+  font-weight: 600
+  line-height: 48px
+
+.avocode
+  text-align: center
+  background-color: $bg-color
+  color: $color-grey
+
+  &__logo
+    max-width: 405px
+    margin: 0 auto
+    padding: 37px 0 7px
+
+  &__text
+    font-size: 14px
+    color: $color-grey
+    padding: 15px 0 80px
+
+.basics
+  background-color: $color-light-grey
+  text-align: center
+  border-bottom: 1px solid #b1b1b1
+  padding-bottom: 39px
+
+  &__title
+    padding: 63px 0 18px
+
+  &__text
+    max-width: 700px
+    margin: 0 auto 33px
+    font-size: 14px
+    color: $color-grey
+    line-height: 25px
+
+  &__img
+    margin: 0 auto
+    max-width: 802px
+
+
+.bsItems
+  +row-flex
+  justify-content: center
+  align-items: baseline
+
+
+.bsItem
+  +col
+  +size(4)
+  +size-md(12)
+
+  &__box
+    margin: 0 auto
+    padding: 30px 0 20px
+    display: flex
+    flex-direction: column
+    max-width: 380px
+
+    +md(padding, 10px)
+
+  &__title
+    font-size: 18px
+    font-weight: 600
+    margin: 16px 0 9px
+
+  &__text
+    font-size: 14px
+    font-weight: 600
+    line-height: 25px
+    color: #777
+
+.bsItem__img
+  max-width: 32px
+  margin: 0 auto
+
+.styles
+  background-color: $bg-color
+  padding: 68px 0 49px
+  border-bottom: 1px solid #b1b1b1
+
+.stylesItems
+  +row-flex
+
+.stylesItem
+  +col
+  +size(6)
+  +size-md(12)
+
+  &__box
+    margin: 0 auto
+
+  &__box-1
+    max-width: 375px
+    padding: 9px 0 0 74px
+
+    +md(padding, 0)
+
+
+  &__box-2
+    max-width: 375px
+    margin-left: 0
+    margin-top: 10px
+
+    +md(margin, 0 auto)
+
+  &__title
+    margin: 60px 0 16px
+
+  &__text
+    font-size: 14px
+    font-weight: 600
+    line-height: 25px
+    color: #777
+    max-width: 280px
+    padding-top: 4px
+
+  &__btn
+    display: inline-block
+    margin-top: 37px
+    padding: 17px 68px
+    box-shadow: 0 15px 15px rgba(0, 188, 135, 0.2)
+    border-radius: 30px
+    background: linear-gradient(to top, #00a983 0%, #00bc87 100%)
+    cursor: pointer
+    color: #fff
+
+    +md(margin, 50px 0)
+
+.text_padding
+  display: block
+  margin-top: 24px
+
+
+
+.tools
+  background-color: $color-light-grey
+  text-align: center
+  padding-bottom: 60px
+  border-bottom: 1px solid #b1b1b1
+
+  &__img
+    padding-top: 110px
+    margin: 0 auto
+    max-width: 170px
+
+  &__title
+    font-size: 28px
+    font-weight: 600
+    line-height: 48px
+    color: $color-grey
+    margin-top: 22px
+
+  &__text
+    margin-top: 10px
+    margin-bottom: 54px
+    font-size: 14px
+    font-weight: 600
+    line-height: 25px
+    color: #777
+    span
+      display: inline-block
+      background-color: #585858
+      border-radius: 3px
+      font-size: 13px
+      text-transform: uppercase
+      padding: 4px 12px
+      color: #fff
+      margin: 0 5px
+
+
+.prm
+  background: url("../img/2-layers.png") no-repeat 43px
+  background-size: 90%
+  height: 380px
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    top: 50%
+    transform: translateY(-15%)
+
+
+  &__img
+    width: 100px
+    height: 100px
+    background-color: $color-green
+    border-radius: 15px
+    margin-bottom: 30px
+
+    +md(width, 70px)
+    +md(height, 70px)
+
+
+    img
+      display: block
+      width: 57px
+      position: relative
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+      +md(width, 40px)
+
+  &__text
+    font-size: 14px
+    font-weight: 600
+    line-height: 25px
+    text-align: center
+
+
+.export
+  background: $bg-color
+  border-bottom: 1px solid #b1b1b1
+
+  &__items
+    +row-flex
+
+    padding-top: 70px
+
+    +md(flex-direction, column-reverse)
+    +md(padding-top, 0)
+
+  &__item
+    +col
+    +size(6)
+    +size-md(12)
+
+    img
+      display: block
+      max-width: 317px
+      margin: 0 auto
+
+  &__title
+    margin-top: 44px
+    margin-bottom: 20px
+
+  &__text
+    margin-bottom: 25px
+    font-size: 14px
+    font-weight: 600
+    line-height: 25px
+
+.box-2
+  margin: 0 auto
+  max-width: 435px
+
+.shift
+  display: inline-block
+  background-color: #585858
+  border-radius: 3px
+  color: #fff
+  font-size: 13px
+  text-transform: uppercase
+  padding: 4px 12px
+
+
+.examples
+  text-align: center
+  margin-top: 55px
+
+  &__items
+    +row-flex
+
+    align-items: baseline
+    margin-top: 32px
+    padding-bottom: 80px
+
+    +md(padding, 10px)
+
+  &__item
+    +col
+    +size(4)
+    +size-md(12)
+
+  &__img
+    max-width: 35px
+
+  &__text
+    font-size: 14px
+    line-height: 25px
+    text-align: center
+    padding: 20px 60px
+
+    +md(padding, 10px 0 35px)
+
+
+
+.color
+  background: $color-light-grey
+  border-bottom: 1px solid #b1b1b1
+
+  &__title
+    padding-top: 70px
+    text-align: center
+
+  &__text
+    text-align: center
+    margin-top: 15px
+
+    span
+      display: inline-block
+      background-color: #585858
+      border-radius: 3px
+      font-size: 13px
+      text-transform: uppercase
+      padding: 4px 12px
+      color: #fff
+      margin: 0 5px
+
+  &__items
+    +row-flex
+    justify-content: center
+    padding-bottom: 70px
+
+    img
+      +md(margin, 30px auto 0)
+
+  &__item-1
+    +col
+    +size(4)
+    +size-md(12)
+
+
+    img
+      display: block
+      max-width: 243px
+      margin-top: 60px
+      margin-left: 75px
+
+  &__item-2
+    +col
+    +size(7)
+    +size-md(12)
+
+    max-width: 470px
+
+
+    img
+      display: block
+      margin-left: 85px
+      margin-top: 66px
+
+
+.add
+  background: $bg-color
+  padding-bottom: 70px
+
+  &__title
+    text-align: center
+    padding-top: 70px
+
+  &__dd
+    width: 260px
+    height: 260px
+    border-radius: 15px
+    border: 2px dashed #b1b1b1
+    margin: 40px auto 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    +md(width, 180px)
+    +md(height, 180px)
+
+    img
+      width: 64px
+
+  &__text
+    font-size: 14px
+    line-height: 20px
+    color: #777
+    margin-top: 30px
+    text-align: center
